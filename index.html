@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
     <title>Dice Game</title>
 </head>
 <body>
     <div class="container">
-        <h1 id="message">Player 1 Turn</h1>
+        <h1 id="message">Kanak's Turn</h1>
+        <p id="msg">To win, score <span>20</span> or more !</p>
         <div class="players">
            
             <div class="player1">
-              <h1>Score: 
+              <h1 >Score: 
                 <span id="player1Scoreboard">0</span>
              </h1>
              <div id="player1dice" class="dice active">-</div>
             </div>
 
             <div class="player2">
-                 <h1>Score: 
+                 <h1 >Score: 
                     <span id="player2Scoreboard">0</span>
                  </h1>
                  <div id="player2dice" class="dice">-</div>
             </div>
         </div>
-
+            <div id="btn">
            <button id="RollBtn">Roll Dice</button>
+           <button id="dice"></button>
            <button id="ResetBtn">Reset Game</button>
+        </div>
     </div>
 </body>
 </html>
